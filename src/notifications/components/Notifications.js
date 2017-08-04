@@ -84,7 +84,7 @@ export class Notifications extends Component{
 
     containerProps(){
         // get props
-        var props = Object.assign({}, this.state, this.props)
+        var props = {};
         // set styles
         props.style = Object.assign({}, 
             styles.container,
@@ -93,14 +93,6 @@ export class Notifications extends Component{
         // set classname
         props.className = (props.className) ? props.className+" " : "";
         props.className += "lori_notifications";
-        // remove unwanted properties
-        delete props.animation;
-        delete props.duration;
-        delete props.delay;
-        delete props.notifications;
-        delete props.position;
-        delete props.show;
-        delete props.children;
         // return remaining props
         return props;
     }
