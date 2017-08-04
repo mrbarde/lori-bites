@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Item from './Item';
+import Item from './Item.jsx';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {pushEnd,removeEnd} from '../actions';

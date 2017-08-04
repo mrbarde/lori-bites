@@ -1,4 +1,4 @@
-const Notification = require('./components/Notifications');
+const Notification = require('./components/Notifications.jsx');
 const {lnRemove, lnPush} = require('./reducers');
 const {pushStart, removeStart} = require('./actions');
 
