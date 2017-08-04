@@ -5,6 +5,8 @@ exports[`Notifications Container Will Render 1`] = `
   className="lori_notifications"
   style={
     Object {
+      "bottom": "40px",
+      "left": "20px",
       "listStyle": "none",
       "marginBottom": "0px",
       "overflowX": "hidden",
