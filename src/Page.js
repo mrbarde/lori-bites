@@ -1,4 +1,3 @@
-const {_interopRequireDefault} = require('./helpers.js');
 import React, {Component} from 'react';
 import propTypes from 'prop-types';
 
