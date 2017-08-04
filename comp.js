@@ -9,5 +9,5 @@ module.exports = Object.assign({}, {
     Page: _interopRequireDefault(Page),
     ResizeWrapper: _interopRequireDefault(ResizeWrapper),
     ScrollWrapper: _interopRequireDefault(ScrollWrapper),
-    CreateReducer,
+    CreateReducer: _interopRequireDefault(CreateReducer)
 }, notifications);
