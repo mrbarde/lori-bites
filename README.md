@@ -2,8 +2,8 @@ Lori Bites
 =========================
 
 Official ReactJS extras for [Lori](https://github.com/mrbarde/lori) framework.  
-Although this library was made with Lori in mind, it still is flexible enough to apply
-its features on any reactjs application.
+Although this library was made with Lori in mind, it still is flexible enough for you to use
+its features on any ReactJs application.
 
 
 ## Installation
