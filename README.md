@@ -8,7 +8,7 @@ its features on any ReactJs application.
 
 ## Installation
 
-React Lori-Bites requires **React 0.14 or later.**
+React Lori-Bites requires **React 15 or later.**
 
 ```
 npm install --save lori-bites
