@@ -1,5 +1,5 @@
-import {lnPush, lnRemove} from '../src/notifications/reducers.js';
-import * as types from '../src/notifications/actionTypes.js';
+import {lnPush, lnRemove} from '../lib/notifications/reducers';
+import * as types from '../lib/notifications/actionTypes';
 
 /**
  * Push reducer tests

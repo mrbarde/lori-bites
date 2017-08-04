@@ -1,5 +1,5 @@
 import React from 'react';
-import Notification from '../src/notifications/components/Item.jsx';
+import Notification from '../lib/notifications/components/Item';
 import renderer from 'react-test-renderer';
 
 

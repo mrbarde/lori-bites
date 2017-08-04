@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import Item from './Item.jsx';
+import Item from './Item';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {pushEnd,removeEnd} from '../actions';
-import AnimationCSS from './AnimationCSS.jsx';
+import AnimationCSS from './AnimationCSS';
 
 export class Notifications extends Component{
 

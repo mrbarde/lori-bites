@@ -2,9 +2,10 @@
   "name": "lori-bites",
   "version": "1.0.8",
   "description": "Lori Bites",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "compile": "babel src --out-dir lib"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "redux": "^3.7.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
     "babel-jest": "^20.0.3",
     "babel-loader": "^7.1.1",
     "babel-preset-es2015": "^6.24.1",
@@ -42,7 +44,6 @@
     "enzyme": "^2.9.1",
     "friendly-errors-webpack-plugin": "^1.6.1",
     "jest": "^20.0.4",
-    "react-test-renderer": "^15.6.1",
-    "webpack": "^3.4.1"
+    "react-test-renderer": "^15.6.1"
   }
 }
