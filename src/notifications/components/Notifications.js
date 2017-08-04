@@ -88,7 +88,7 @@ export class Notifications extends Component{
         // set styles
         props.style = Object.assign({}, 
             styles.container,
-            styles[this.props.position],
+            styles[this.state.position],
             this.props.style);
         // set classname
         props.className = (this.props.className) ? this.props.className+" " : "";
