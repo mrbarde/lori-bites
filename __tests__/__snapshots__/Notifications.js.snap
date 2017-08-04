@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Notifications Container Will Render 1`] = `
+<ul
+  className="lori_notifications"
+  style={
+    Object {
+      "bottom": "40px",
+      "left": "20px",
+      "listStyle": "none",
+      "marginBottom": "0px",
+      "overflowX": "hidden",
+      "overflowY": "visible",
+      "paddingLeft": "0px",
+      "position": "absolute",
+      "width": "0px",
+    }
+  }
+  transitionName="fade"
+>
+  <span />
+</ul>
+`;

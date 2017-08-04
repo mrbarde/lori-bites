@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render a notification  1`] = `
+<li
+  className="ln_notif_info"
+  style={
+    Object {
+      "backgroundColor": "#ffffff",
+      "border": "solid 1px #666666",
+      "float": "left",
+      "marginBottom": "20px",
+      "padding": "30px 15px",
+      "position": "relative",
+      "width": "300px",
+    }
+  }
+>
+  <a
+    className="ln_notif_close"
+    href="javascript:;"
+    style={
+      Object {
+        "color": "#999999",
+        "fontSize": "14px",
+        "position": "absolute",
+        "right": "15px",
+        "top": "10px",
+      }
+    }
+  >
+    ×
+  </a>
+  <p
+    className="ln_notif_message"
+    style={
+      Object {
+        "color": "#666666",
+        "fontSize": "13px",
+        "margin": "0px 0px",
+      }
+    }
+  >
+    Hello world!
+  </p>
+</li>
+`;
