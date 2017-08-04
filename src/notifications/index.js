@@ -1,6 +1,6 @@
-import Notification from './components/Notifications';
-import {lnRemove, lnPush} from './components/reducers';
-import {pushStart, removeStart} from './components/actions';
+const Notification = require('./components/Notifications.jsx');
+const {lnRemove, lnPush} = require('./reducers');
+const {pushStart, removeStart} = require('./actions');
 
 module.exports.Notifications = Notification;
 module.exports.pushStart = pushStart;
