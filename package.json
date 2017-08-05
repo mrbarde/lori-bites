@@ -1,6 +1,6 @@
 {
   "name": "lori-bites",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Lori Bites",
   "main": "./lib/index.js",
   "scripts": {
