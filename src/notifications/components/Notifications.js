@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Item from './Item';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {pushEnd,removeEnd} from '../actions';
+import {pushEnd, removeStart, removeEnd} from '../actions';
 import AnimationCSS from './AnimationCSS';
 
 class Notifications extends Component{
@@ -102,13 +102,14 @@ class Notifications extends Component{
         var {delay} = this.state;
 
         let notif = Object.assign({delay, type: 'info'}, item, {
-            remove: this.remove.bind(this, item.id)
+            remove: this.remove.bind(this, item.id),
+            positionStyles: this.state.position
         });
         return <Item {...notif} key={item.id || index} />;
     }
 
     remove(id){
-        this.removeNotify(id);
+        this.props.removeNotify(id);
     }
 }
 
@@ -142,6 +143,6 @@ var styles = {
 
 const mapStateToProps = ({lnPush, lnRemove}) => { return {lnPush, lnRemove} };
 
-const mapDispatchToProps = (dispatch) => { return bindActionCreators({pushEnd, removeEnd}, dispatch); }
+const mapDispatchToProps = (dispatch) => { return bindActionCreators({pushEnd, removeEnd, removeStart}, dispatch); }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Notifications);

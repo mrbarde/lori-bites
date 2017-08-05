@@ -7,7 +7,7 @@ exports[`Render a notification  1`] = `
     Object {
       "backgroundColor": "#ffffff",
       "border": "solid 1px #666666",
-      "float": "left",
+      "float": "right",
       "marginBottom": "20px",
       "padding": "30px 15px",
       "position": "relative",

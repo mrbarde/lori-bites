@@ -22,13 +22,13 @@ class Notification extends Component {
 
     render(){
         var {show} = this.state;
-        var {animation, duration, type, className, message} = this.props;
+        var {animation, duration, type, className, message, positionStyles} = this.props;
 
         type = (!type) ? 'info' : type;
 
         className = (className) ? " "+className : '';
 
-        let containerStyles = Object.assign({}, styles.default.container, styles[type]['container']);
+        let containerStyles = Object.assign({}, styles.default.container, styles[type]['container'], styles[positionStyles]);
         let closeStyles = Object.assign({}, styles.default.close, styles[type]['close']);
         let messageStyles = Object.assign({}, styles.default.message, styles[type]['message']);
 
@@ -51,7 +51,6 @@ var styles = {
     default: {
         container: {
             position: 'relative',
-            float: 'left',
             width: '300px',
             marginBottom: '20px',
             padding: '30px 15px',
@@ -90,6 +89,18 @@ var styles = {
         container: {},
         close: {},
         message: {}
+    },
+    topRight: {
+        float: 'right'
+    },
+    topLeft: {
+        float: 'left'
+    },
+    bottomRight: {
+        float: 'right'
+    },
+    bottomLeft: {
+        float: 'left'
     }
 };
 
@@ -100,7 +111,7 @@ Notification.propTypes = {
     className: propTypes.string,
     delay: propTypes.number.isRequired,
     sticky: propTypes.bool,
-    positionStyles: propTypes.string
+    positionStyles: propTypes.string.isRequired
 }
 
 export default Notification;
