@@ -3,7 +3,7 @@ import Item from './Item';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {pushEnd, removeStart, removeEnd} from '../actions';
-import AnimationCSS from './AnimationCSS';
+import {CSSTransitionGroup} from 'react-transition-group';
 
 class Notifications extends Component{
 
@@ -14,7 +14,7 @@ class Notifications extends Component{
             position: 'topRight',
             duration: 500,
             delay: 5000,
-            animationName: 'fromLeft',
+            animation: 'notif',
             show: true
         };
     }
@@ -47,7 +47,7 @@ class Notifications extends Component{
     }
 
     componentWillMount(){
-        var {position, duration, delay, animationName, notifications} = this.props;
+        var {position, duration, delay, animation, notifications} = this.props;
 
         if(position){
             this.setState({position});
@@ -61,23 +61,25 @@ class Notifications extends Component{
             this.setState({delay});
         }
 
-        if(animationName){
-            this.setState({animationName});
+        if(animation){
+            this.setState({animation});
         }
     }
 
     render(){
         var {notifications, 
             position, 
-            transitionName, 
+            animation, 
             timeout, 
             show} = this.state;
         return(
             <ul {...this.containerProps()}>
-                <AnimationCSS transitionName={transitionName || 'loriNoti'}
-                    timeout={timeout || 500}>
-                    {notifications.map(this.renderNotification.bind(this))}
-                </AnimationCSS>
+                <CSSTransitionGroup 
+                    transitionEnterTimeout={timeout || 500}
+                    transitionLeaveTimeout={timeout || 500}
+                    transitionName={animation}>
+                        {notifications.map(this.renderNotification.bind(this))}
+                </CSSTransitionGroup>
             </ul>
         )
     }

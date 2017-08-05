@@ -9,7 +9,7 @@ exports[`Notifications Container Will Render 1`] = `
       "left": "20px",
       "listStyle": "none",
       "marginBottom": "0px",
-      "overflowX": "hidden",
+      "overflowX": "visible",
       "overflowY": "visible",
       "paddingLeft": "0px",
       "position": "absolute",

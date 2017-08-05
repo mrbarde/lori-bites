@@ -1,5 +1,5 @@
 import React from 'react';
-import Notifications from '../lib/notifications/components/Notifications';
+import {Notifications} from '../lib/notifications/components/Notifications';
 import renderer from 'react-test-renderer';
 
 test('Notifications Container Will Render', () => {
