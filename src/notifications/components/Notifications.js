@@ -109,7 +109,7 @@ class Notifications extends Component{
     }
 
     remove(id){
-        this.props.removeNotify(id);
+        this.props.removeStart(id);
     }
 }
 
@@ -120,7 +120,7 @@ var styles = {
         listStyle: 'none',
         paddingLeft: '0px',
         marginBottom: '0px',
-        overflowX: 'hidden',
+        overflowX: 'visible',
         overflowY: 'visible'
     },
     'topRight': {

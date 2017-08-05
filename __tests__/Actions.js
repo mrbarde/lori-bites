@@ -7,6 +7,7 @@ describe("async actions", () => {
 
         let notification = {
             message: 'Hello world!',
+            id: '5gge3FFs3'
         };
 
         let expectedAction = {

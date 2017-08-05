@@ -1,6 +1,9 @@
 import * as types from './actionTypes';
 
 export const pushStart = function(notification){
+    // set notification id
+    notification.id = (notification.id) ? notification.id : (Math.random()*10000000)
+    // return a notification
     return {
         type: types.LN_PUSH_START,
         isPushing: true,
