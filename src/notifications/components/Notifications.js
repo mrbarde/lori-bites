@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 import {pushEnd,removeEnd} from '../actions';
 import AnimationCSS from './AnimationCSS';
 
-export class Notifications extends Component{
+class Notifications extends Component{
 
     constructor(){
         super();
