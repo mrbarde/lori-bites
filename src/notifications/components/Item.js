@@ -22,7 +22,7 @@ class Notification extends Component {
 
     render(){
         var {show} = this.state;
-        var {animation, duration, type, className, message, positionStyles} = this.props;
+        var {animation, duration, type, className, message} = this.props;
 
         type = (!type) ? 'info' : type;
 
@@ -100,7 +100,7 @@ Notification.propTypes = {
     className: propTypes.string,
     delay: propTypes.number.isRequired,
     sticky: propTypes.bool,
-    positionStyles: propTypes.string.isRequired
+    positionStyles: propTypes.string
 }
 
 export default Notification;

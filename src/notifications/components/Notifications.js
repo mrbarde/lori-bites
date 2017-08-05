@@ -14,7 +14,7 @@ class Notifications extends Component{
             position: 'topRight',
             duration: 500,
             delay: 5000,
-            animation: 'fromLeft',
+            animationName: 'fromLeft',
             show: true
         };
     }
@@ -47,7 +47,7 @@ class Notifications extends Component{
     }
 
     componentWillMount(){
-        var {position, duration, delay, animation, notifications} = this.props;
+        var {position, duration, delay, animationName, notifications} = this.props;
 
         if(position){
             this.setState({position});
@@ -61,8 +61,8 @@ class Notifications extends Component{
             this.setState({delay});
         }
 
-        if(animation){
-            this.setState({animation});
+        if(animationName){
+            this.setState({animationName});
         }
     }
 
