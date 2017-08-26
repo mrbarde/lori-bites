@@ -12,7 +12,7 @@ var Quote = ({body, author}) => {
 const styles = {
     quote: {
         boxSizing: 'border-box',
-		fonFamily: "'Lato', sans-serif",
+		fontFamily: "'Lato', sans-serif",
         position: 'relative',
         float: 'none',
         clear: 'both',

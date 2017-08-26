@@ -115,7 +115,7 @@ var styles = {
 		textDecoration: 'none',
 		display: 'inline-block',
 		padding: '0px 15px',
-		fonFamily: "'Lato', sans-serif",
+		fontFamily: "'Lato', sans-serif",
 		color: '#48b0f7',
 		fontWeight: 600
 	}
