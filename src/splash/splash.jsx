@@ -88,6 +88,7 @@ var styles = {
 		flex: '1',
 		justifyContent: 'center',
 		height: '100%',
+		fontFamily: "'Lato', sans-serif",
 	},
 	column:{
 		flex: '1',
@@ -104,7 +105,7 @@ var styles = {
 		width: '100%',
 		margin: '0px 0px 15px 0px',
 		textAlign: 'center',
-		color: '#D1E1F',
+		color: '#D1E1FE',
 		fontWeight: 300,
 		fontSize: '1.3em'
 	},
@@ -116,8 +117,7 @@ var styles = {
 		display: 'inline-block',
 		padding: '0px 15px',
 		fontFamily: "'Lato', sans-serif",
-		color: '#48b0f7',
-		fontWeight: 600
+		color: '#48b0f7'
 	}
 };
 
