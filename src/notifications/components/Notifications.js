@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 import {pushEnd, removeStart, removeEnd} from '../actions';
 import {CSSTransitionGroup} from 'react-transition-group';
 
-class Notifications extends Component{
+export class Notifications extends Component{
 
     constructor(){
         super();
