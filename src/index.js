@@ -6,6 +6,7 @@ import Notification  from './notifications/components/Notifications';
 import {lnRemove, lnPush}  from './notifications/reducers';
 import {pushStart, removeStart}  from './notifications/actions';
 import Clicks  from './Clicks';
+import Splash from './splash/splash';
 
 module.exports.Page = Page;
 module.exports.ResizeWrapper = ResizeWrapper;
@@ -16,3 +17,4 @@ module.exports.pushStart = pushStart;
 module.exports.removeStart = removeStart;
 module.exports.lnPush = lnPush;
 module.exports.lnRemove = lnRemove;
+module.exports.Splash = Splash;
