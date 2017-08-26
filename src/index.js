@@ -5,7 +5,6 @@ import CreateReducer from './CreateReducer';
 import Notification  from './notifications/components/Notifications';
 import {lnRemove, lnPush}  from './notifications/reducers';
 import {pushStart, removeStart}  from './notifications/actions';
-import Clicks  from './Clicks';
 import Splash from './splash/splash';
 
 module.exports.Page = Page;
